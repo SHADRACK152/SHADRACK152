@@ -1,39 +1,33 @@
-<!-- Animated Banner -->
+<!-- Animated Typing Banner -->
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?size=28&duration=4000&color=58A6FF&center=true&vCenter=true&width=800&lines=👋+Hi,+I'm+Shadrack+Mark;💡+IT+Student+@+Kabarak+University;🔐+Cybersecurity+%7C+🤖+AI+%7C+🌍+Web+%26+Mobile+Solutions;🚀+Building+Secure+and+Smart+Systems" />
+  <img src="https://readme-typing-svg.herokuapp.com?size=28&duration=4000&color=00F7FF&center=true&vCenter=true&width=850&lines=👋+Hello+World!+I'm+Shadrack+Mark;🎓+IT+Student+@+Kabarak+University;🔐+Cybersecurity+Enthusiast;🤖+AI+%7C+Web+%26+Mobile+Developer;🚀+Passionate+about+Secure+and+Smart+Tech" />
 </div>
 
 ---
 
 ## 🚀 About Me
-- 🎓 IT Student @ **Kabarak University** (Cybersecurity specialization)  
-- 🤖 Innovating with **AI, Security, Web & Mobile Solutions**  
-- 🔭 Current Projects:
-  - 🧠 **EduScan** – AI-powered Smart Attendance (Facial + Voice Recognition)  
-  - 🔐 **Guardify** – Cybersecurity Awareness AI + Game-Based Platform  
-  - 📍 **Find My Class** – Real-time lecture room locator app  
-  - 🎨 **TrOVA EDITS** – Modern motion & 3D creative website  
-  - 🛒 **Agro Marketplace App** – Connecting farmers to fair markets  
-  - 🏬 **Fagon Fashions** – Fashion Business Management System  
-  - 🖥️ **T-hub** – Digital Learning Hub (Nakuru)  
-- 🌱 Learning **Machine Learning | Ethical Hacking | Cloud Security**  
-- ⚡ Fun fact: *“AI without security is like a lock without a key.”*  
+- 🎓 IT Student @ **Kabarak University** (Cybersecurity Major)  
+- 🔭 Innovating in **AI | Cybersecurity | Web | Mobile Apps**  
+- 🌱 Learning **Cloud Security | Ethical Hacking | AI/ML**  
+- 💬 Ask me about **Flask, React, MongoDB, Security, Mobile Dev**  
+- 🎯 Goal: *To merge AI with Cybersecurity to build the future of IT.*  
 
 ---
 
-## 📌 Pinned Projects
-<p align="center">
-  <a href="https://github.com/SHADRACK152/EduScan">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SHADRACK152&repo=EduScan&theme=radical" />
-  </a>
-  <a href="https://github.com/SHADRACK152/Guardify">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=SHADRACK152&repo=Guardify&theme=radical" />
-  </a>
-</p>
+## 📂 Projects Showcase
+| Project | Description | Tech |
+|---------|-------------|------|
+| 🧠 **EduScan** | AI-powered Smart Attendance System (Facial + Voice Recognition) | Python, PyQt5, ML |
+| 🔐 **Guardify** | Cybersecurity Awareness AI + Game-Based Learning | Flask, MongoDB, AI |
+| 📍 **Find My Class** | Real-time lecture room locator app | Android (Java, SQLite) |
+| 🎨 **TrOVA EDITS** | Motion & 3D Creative Website | HTML, CSS, JS, PHP |
+| 🛒 **Agro Marketplace App** | Connecting farmers to markets | Mobile + DB |
+| 🏬 **Fagon Fashions** | Fashion Business Management System | PHP, MySQL |
+| 🖥️ **T-hub** | Digital Learning Hub in Nakuru | Training + Web Tools |
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Tech Stack & Tools
 <p align="center">
   <img src="https://skillicons.dev/icons?i=python,java,javascript,php,cpp,html,css,react,nodejs,flask,django,pyqt,mongodb,mysql,firebase,docker,figma,git,github,linux,azure,aws,gcp" />
 </p>
@@ -44,13 +38,7 @@
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=SHADRACK152&show_icons=true&theme=radical&hide_border=true" height="160px"/>
   <img src="https://github-readme-streak-stats.herokuapp.com?user=SHADRACK152&theme=radical&hide_border=true" height="160px"/>
-</p>
-
----
-
-## 🏆 Achievements
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=SHADRACK152&theme=onedark&row=1&column=6" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=SHADRACK152&layout=compact&theme=radical" height="160px"/>
 </p>
 
 ---
@@ -64,7 +52,30 @@
 
 ## 🐍 Contribution Snake
 <p align="center">
-  <img src="https://github.com/Platane/snk/raw/output/github-contribution-grid-snake.svg" alt="Snake animation" />
+  <img src="https://github.com/Platane/snk/raw/output/github-contribution-grid-snake.svg" />
+</p>
+
+---
+
+## 📊 Metrics Dashboard
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=SHADRACK152&theme=github_dark" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=SHADRACK152&theme=github_dark" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=SHADRACK152&theme=github_dark" />
+</p>
+
+---
+
+## ⏱️ Coding Stats
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=shadrack152&theme=radical&layout=compact" />
+</p>
+
+---
+
+## 🎶 Spotify Now Playing
+<p align="center">
+  <img src="https://novatorem.vercel.app/api/spotify" alt="Spotify Now Playing" width="400" />
 </p>
 
 ---
@@ -76,9 +87,9 @@
 
 ---
 
-## 📟 Profile Views
+## 🌍 Visitor Map
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=SHADRACK152&style=for-the-badge&color=blue" alt="Profile views"/>
+  <img src="https://profile-counter.glitch.me/SHADRACK152/count.svg" />
 </p>
 
 ---
@@ -95,6 +106,8 @@
 
 <div align="center">
 
-⭐ *“Secure code, smart AI, and innovation for a better tomorrow.”*  
+⭐ *“AI + Security = The future of IT.”*  
+
+<img src="https://media.giphy.com/media/13HgwGsXF0aiGY/giphy.gif" width="400" />
 
 </div>
