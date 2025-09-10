@@ -5,6 +5,12 @@
 
 ---
 
+<div align="center">
+  <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="250" alt="AI animation"/>
+</div>
+
+---
+
 ## 🚀 About Me
 - 🎓 IT Student @ **Kabarak University** (Cybersecurity Major)  
 - 🔭 Innovating in **AI | Cybersecurity | Web | Mobile Apps**  
@@ -15,8 +21,8 @@
 ---
 
 ## 📂 Projects Showcase
-| Project | Description | Tech |
-|---------|-------------|------|
+| 🚀 Project | 🔎 Description | ⚙️ Tech |
+|------------|---------------|---------|
 | 🧠 **EduScan** | AI-powered Smart Attendance System (Facial + Voice Recognition) | Python, PyQt5, ML |
 | 🔐 **Guardify** | Cybersecurity Awareness AI + Game-Based Learning | Flask, MongoDB, AI |
 | 📍 **Find My Class** | Real-time lecture room locator app | Android (Java, SQLite) |
@@ -28,8 +34,12 @@
 ---
 
 ## 🛠️ Tech Stack & Tools
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=python,java,javascript,php,cpp,html,css,react,nodejs,flask,django,pyqt,mongodb,mysql,firebase,docker,figma,git,github,linux,azure,aws,gcp&perline=9" />
+</div>
+
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=python,java,javascript,php,cpp,html,css,react,nodejs,flask,django,pyqt,mongodb,mysql,firebase,docker,figma,git,github,linux,azure,aws,gcp" />
+  <img src="https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif" width="300"/>
 </p>
 
 ---
@@ -43,21 +53,21 @@
 
 ---
 
-## 📈 Contribution Graph
+## 🌊 Contribution Graph
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=SHADRACK152&theme=react-dark&hide_border=true&area=true" />
 </p>
 
 ---
 
-## 🐍 Contribution Snake
+## 🐍 Animated Contribution Snake
 <p align="center">
   <img src="https://github.com/Platane/snk/raw/output/github-contribution-grid-snake.svg" />
 </p>
 
 ---
 
-## 📊 Metrics Dashboard
+## 📊 Animated Metrics Dashboard
 <p align="center">
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=SHADRACK152&theme=github_dark" />
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=SHADRACK152&theme=github_dark" />
@@ -66,14 +76,14 @@
 
 ---
 
-## ⏱️ Coding Stats
+## ⏱️ Coding Stats (Animated)
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api/wakatime?username=shadrack152&theme=radical&layout=compact" />
 </p>
 
 ---
 
-## 🎶 Spotify Now Playing
+## 🎶 Spotify Now Playing 🎧
 <p align="center">
   <img src="https://novatorem.vercel.app/api/spotify" alt="Spotify Now Playing" width="400" />
 </p>
@@ -87,7 +97,7 @@
 
 ---
 
-## 🌍 Visitor Map
+## 🌍 Visitor Counter
 <p align="center">
   <img src="https://profile-counter.glitch.me/SHADRACK152/count.svg" />
 </p>
