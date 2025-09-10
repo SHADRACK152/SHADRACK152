@@ -1,50 +1,49 @@
 <!-- Animated Typing Banner -->
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?size=28&duration=4000&color=00F7FF&center=true&vCenter=true&width=850&lines=👋+Hello+World!+I'm+Shadrack+Mark;🎓+IT+Student+@+Kabarak+University;🔐+Cybersecurity+Enthusiast;🤖+AI+%7C+Web+%26+Mobile+Developer;🚀+Passionate+about+Secure+and+Smart+Tech" />
-</div>
-
----
-
-<div align="center">
-  <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="250" alt="AI animation"/>
+  <img src="https://readme-typing-svg.herokuapp.com?size=28&duration=4000&color=00F7FF&center=true&vCenter=true&width=850&lines=👋+Hello+World!+I'm+Shadrack+Mark;🎓+IT+Student+@+Kabarak+University;🔐+Cybersecurity+Enthusiast;🤖+AI+%7C+Web+%26+Mobile+Developer;🚀+Building+Secure+and+Smart+Tech+Solutions" />
 </div>
 
 ---
 
 ## 🚀 About Me
 - 🎓 IT Student @ **Kabarak University** (Cybersecurity Major)  
-- 🔭 Innovating in **AI | Cybersecurity | Web | Mobile Apps**  
-- 🌱 Learning **Cloud Security | Ethical Hacking | AI/ML**  
-- 💬 Ask me about **Flask, React, MongoDB, Security, Mobile Dev**  
-- 🎯 Goal: *To merge AI with Cybersecurity to build the future of IT.*  
+- 💡 Passionate about **AI, Cybersecurity, and Scalable Web Systems**  
+- 🔭 Exploring **Cloud Security | Distributed Systems | Ethical Hacking**  
+- 💬 Ask me about **Flask, React, MongoDB, Python, Security**  
+- 🎯 Vision: *AI + Security = The future of IT.*  
 
 ---
 
-## 📂 Projects Showcase
+## 📂 Featured Projects
+
 | 🚀 Project | 🔎 Description | ⚙️ Tech |
 |------------|---------------|---------|
-| 🧠 **EduScan** | AI-powered Smart Attendance System (Facial + Voice Recognition) | Python, PyQt5, ML |
-| 🔐 **Guardify** | Cybersecurity Awareness AI + Game-Based Learning | Flask, MongoDB, AI |
-| 📍 **Find My Class** | Real-time lecture room locator app | Android (Java, SQLite) |
-| 🎨 **TrOVA EDITS** | Motion & 3D Creative Website | HTML, CSS, JS, PHP |
-| 🛒 **Agro Marketplace App** | Connecting farmers to markets | Mobile + DB |
-| 🏬 **Fagon Fashions** | Fashion Business Management System | PHP, MySQL |
-| 🖥️ **T-hub** | Digital Learning Hub in Nakuru | Training + Web Tools |
+| 🌍 [**energyhub_marketplace**](https://github.com/SHADRACK152/energyhub_marketplace) | Marketplace for renewable energy products | JavaScript |
+| 🤖 [**auto-devops-assistant**](https://github.com/SHADRACK152/auto-devops-assistant) | AI developer assistant for automation | Python |
+| 🗣️ [**Sauti.Check**](https://github.com/SHADRACK152/Sauti.Check) | TypeScript-based project (speech/voice concept) | TypeScript |
+| ✅ [**trustseal**](https://github.com/SHADRACK152/trustseal) | Secure validation & trust seal app | TypeScript |
+| 🔋 [**Pulsetrade**](https://github.com/SHADRACK152/Pulsetrade) | Green commerce B2B2C for eco-friendly trade | JavaScript |
+| 🏥 [**doctors-recommendetion**](https://github.com/SHADRACK152/doctors-recommendetion) | Simple doctors recommendation system | HTML |
+| 🛒 [**3d-onlie-shoping-website**](https://github.com/SHADRACK152/3d-onlie-shoping-website) | 3D e-commerce website | HTML |
+| 🛒 [**3d-online-shopping**](https://github.com/SHADRACK152/3d-online-shopping) | 3D commerce platform (alt version) | HTML |
+| 🔐 [**Guardify2**](https://github.com/SHADRACK152/Guardify2) | Cybersecurity awareness web app | HTML |
+| 🔐 [**Guardify**](https://github.com/SHADRACK152/Guardify) | Cybersecurity learning platform | HTML, GPL v3 |
+| 🌐 [**Distributed-system**](https://github.com/SHADRACK152/Distributed-system) | Distributed computing project | Python |
+| 🏫 [**Distributed-system-school**](https://github.com/SHADRACK152/Distributed-system-school) | School-focused distributed system | Python |
+| 🏫 [**casthsam-school**](https://github.com/SHADRACK152/casthsam-school) | School database project | HTML |
+| 🐍 [**cat-2**](https://github.com/SHADRACK152/cat-2) | Python coursework project | Python |
+| 🎶 [**music-app**](https://github.com/SHADRACK152/music-app) | React-based music app (open collab) | JavaScript |
 
 ---
 
-## 🛠️ Tech Stack & Tools
+## 🛠️ Tech Stack
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=python,java,javascript,php,cpp,html,css,react,nodejs,flask,django,pyqt,mongodb,mysql,firebase,docker,figma,git,github,linux,azure,aws,gcp&perline=9" />
+  <img src="https://skillicons.dev/icons?i=python,java,javascript,typescript,php,html,css,react,nodejs,flask,django,pyqt,mongodb,mysql,firebase,docker,figma,git,github,linux,azure,aws,gcp&perline=9" />
 </div>
 
-<p align="center">
-  <img src="https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif" width="300"/>
-</p>
-
 ---
 
-## 📊 GitHub Performance
+## 📊 GitHub Stats
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=SHADRACK152&show_icons=true&theme=radical&hide_border=true" height="160px"/>
   <img src="https://github-readme-streak-stats.herokuapp.com?user=SHADRACK152&theme=radical&hide_border=true" height="160px"/>
@@ -67,30 +66,7 @@
 
 ---
 
-## 📊 Animated Metrics Dashboard
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=SHADRACK152&theme=github_dark" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=SHADRACK152&theme=github_dark" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=SHADRACK152&theme=github_dark" />
-</p>
-
----
-
-## ⏱️ Coding Stats (Animated)
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=shadrack152&theme=radical&layout=compact" />
-</p>
-
----
-
-## 🎶 Spotify Now Playing 🎧
-<p align="center">
-  <img src="https://novatorem.vercel.app/api/spotify" alt="Spotify Now Playing" width="400" />
-</p>
-
----
-
-## ✨ Random Dev Quote
+## ✨ Quote of the Day
 <p align="center">
   <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" />
 </p>
@@ -116,7 +92,7 @@
 
 <div align="center">
 
-⭐ *“AI + Security = The future of IT.”*  
+⭐ *“Code for Security, Build with AI, Impact the World.”*  
 
 <img src="https://media.giphy.com/media/13HgwGsXF0aiGY/giphy.gif" width="400" />
 
