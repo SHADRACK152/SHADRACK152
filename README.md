@@ -6,7 +6,7 @@
 ---
 
 ## 🚀 About Me
-- 🎓 IT Student @ **Kabarak University** (Cybersecurity Major)  
+- 🎓 IT Graduate class of 2026 @ **Kabarak University** (Cybersecurity Major)  
 - 💡 Passionate about **AI, Cybersecurity, and Scalable Web Systems**  
 - 🔭 Exploring **Cloud Security | Distributed Systems | Ethical Hacking**  
 - 💬 Ask me about **Flask, React, MongoDB, Python, Security**  
