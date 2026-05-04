@@ -1,0 +1,175 @@
+"""
+Auto-updates the README.md projects section by fetching all public repos
+from the GitHub API. Run via GitHub Actions or manually.
+"""
+
+import requests
+import re
+import os
+from datetime import datetime
+
+GITHUB_USERNAME = os.environ.get("GITHUB_USERNAME", "SHADRACK152")
+GITHUB_TOKEN    = os.environ.get("GITHUB_TOKEN", "")
+
+HEADERS = {
+    "Authorization": f"token {GITHUB_TOKEN}",
+    "Accept": "application/vnd.github.v3+json",
+}
+
+# ── Language → shields.io badge colour + logo ──────────────────────────────
+LANG_META = {
+    "Python":     ("3776AB", "python"),
+    "TypeScript": ("3178C6", "typescript"),
+    "JavaScript": ("F7DF1E", "javascript", "black"),
+    "Java":       ("ED8B00", "openjdk"),
+    "PHP":        ("777BB4", "php"),
+    "HTML":       ("E34F26", "html5"),
+    "CSS":        ("1572B6", "css3"),
+    "Shell":      ("4EAA25", "gnubash"),
+    "Dockerfile": ("2496ED", "docker"),
+    "Go":         ("00ADD8", "go", "black"),
+    "Rust":       ("000000", "rust"),
+    "C++":        ("00599C", "cplusplus"),
+    "C":          ("A8B9CC", "c"),
+}
+
+EMOJI_MAP = {
+    "security": "🔐", "guard": "🔐", "hack": "🔐", "cyber": "🔐",
+    "energy":   "⚡", "solar": "⚡", "power": "⚡",
+    "trade":    "💹", "market": "🛒", "shop": "🛒", "commerce": "🛒",
+    "ai":       "🤖", "ml":    "🤖", "bot": "🤖", "auto": "🤖",
+    "music":    "🎶", "audio": "🎵", "sound": "🔊",
+    "school":   "🏫", "edu":   "🎓", "learn": "📚",
+    "doctor":   "🏥", "health":"🏥", "med": "🏥",
+    "system":   "🌐", "dist":  "🌐", "network": "🌐",
+    "trust":    "✅", "seal":  "✅", "verify": "✅",
+    "voice":    "🗣️", "speech":"🗣️", "sauti": "🗣️",
+    "pulse":    "🔋", "green": "🌱",
+    "3d":       "🛒", "cat":   "🐍",
+}
+
+def lang_badge(lang: str) -> str:
+    if not lang:
+        return ""
+    meta = LANG_META.get(lang, None)
+    if meta:
+        color, logo = meta[0], meta[1]
+        text_color  = meta[2] if len(meta) > 2 else "white"
+        return (
+            f"![{lang}](https://img.shields.io/badge/"
+            f"{lang.replace('+', '%2B').replace(' ', '_')}"
+            f"-{color}?style=flat-square&logo={logo}&logoColor={text_color})"
+        )
+    return f"![{lang}](https://img.shields.io/badge/{lang.replace(' ','_')}-555?style=flat-square)"
+
+
+def repo_emoji(name: str, desc: str) -> str:
+    text = (name + " " + (desc or "")).lower()
+    for keyword, emoji in EMOJI_MAP.items():
+        if keyword in text:
+            return emoji
+    return "📦"
+
+
+def stars_badge(repo_name: str) -> str:
+    return (
+        f"![Stars](https://img.shields.io/github/stars/{GITHUB_USERNAME}/{repo_name}"
+        f"?style=flat-square&color=00F7FF&labelColor=0D1117&logo=github)"
+    )
+
+def forks_badge(repo_name: str) -> str:
+    return (
+        f"![Forks](https://img.shields.io/github/forks/{GITHUB_USERNAME}/{repo_name}"
+        f"?style=flat-square&color=7B2FBE&labelColor=0D1117&logo=github)"
+    )
+
+def last_commit_badge(repo_name: str) -> str:
+    return (
+        f"![Updated](https://img.shields.io/github/last-commit/{GITHUB_USERNAME}/{repo_name}"
+        f"?style=flat-square&color=00C851&labelColor=0D1117)"
+    )
+
+
+def fetch_repos() -> list:
+    all_repos, page = [], 1
+    while True:
+        url = (
+            f"https://api.github.com/users/{GITHUB_USERNAME}/repos"
+            f"?sort=updated&per_page=100&page={page}"
+        )
+        resp = requests.get(url, headers=HEADERS, timeout=15)
+        data = resp.json()
+        if not data or "message" in data:
+            break
+        all_repos.extend(data)
+        if len(data) < 100:
+            break
+        page += 1
+
+    # Exclude forks and the profile repo itself
+    return [
+        r for r in all_repos
+        if not r.get("fork") and r["name"].lower() != GITHUB_USERNAME.lower()
+    ]
+
+
+def build_projects_section(repos: list) -> str:
+    # Sort: stars desc, then last updated desc
+    repos.sort(
+        key=lambda r: (r.get("stargazers_count", 0), r.get("updated_at", "")),
+        reverse=True,
+    )
+
+    # ── Table header ──
+    lines = [
+        "| &nbsp; | Repository | Description | Stack | Stats |",
+        "|:------:|:-----------|:------------|:------|:------|",
+    ]
+
+    for repo in repos[:20]:
+        name   = repo["name"]
+        url    = repo["html_url"]
+        raw_desc = repo.get("description") or "No description yet."
+        desc   = raw_desc[:70] + ("…" if len(raw_desc) > 70 else "")
+        lang   = repo.get("language") or ""
+        emoji  = repo_emoji(name, raw_desc)
+
+        badge_lang = lang_badge(lang)
+        badge_stars = stars_badge(name)
+        badge_forks = forks_badge(name)
+        badge_commit = last_commit_badge(name)
+
+        lines.append(
+            f"| {emoji} | "
+            f"[**`{name}`**]({url}) | "
+            f"{desc} | "
+            f"{badge_lang} | "
+            f"{badge_stars} {badge_forks}<br/>{badge_commit} |"
+        )
+
+    timestamp = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
+    lines.append(f"\n> 🤖 **Auto-updated:** `{timestamp}` · {len(repos)} repositories indexed")
+    return "\n".join(lines)
+
+
+def update_readme(section_content: str, readme_path: str = "README.md") -> None:
+    with open(readme_path, "r", encoding="utf-8") as f:
+        content = f.read()
+
+    pattern     = r"<!-- PROJECTS_START -->.*?<!-- PROJECTS_END -->"
+    replacement = f"<!-- PROJECTS_START -->\n{section_content}\n<!-- PROJECTS_END -->"
+    new_content = re.sub(pattern, replacement, content, flags=re.DOTALL)
+
+    with open(readme_path, "w", encoding="utf-8") as f:
+        f.write(new_content)
+
+    print(f"✅  README updated — {len(section_content.splitlines())} lines written.")
+
+
+if __name__ == "__main__":
+    print(f"🔍  Fetching repos for @{GITHUB_USERNAME}…")
+    repos = fetch_repos()
+    print(f"📦  Found {len(repos)} repositories")
+    section = build_projects_section(repos)
+    update_readme(section)
+    print("🚀  Done!")
